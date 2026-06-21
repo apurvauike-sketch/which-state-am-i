@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Which State Am I?</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500&display=swap');
+
+  :root{
+    --bg: #1b1410;
+    --card: #241b15;
+    --ink: #f3ead9;
+    --muted: #c9b89e;
+    --accent: #d98e3d;
+  }
+
+  * { box-sizing: border-box; }
+
+  body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 50% 0%, #2a2018 0%, var(--bg) 60%);
+    font-family: 'Inter', sans-serif;
+    color: var(--ink);
+    padding: 32px;
+  }
+
+  .card{
+    max-width: 560px;
+    width: 100%;
+    background: var(--card);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);
+    border: 1px solid rgba(217,142,61,0.15);
+  }
+
+  .eyebrow{
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding: 28px 32px 0;
+    font-weight: 500;
+  }
+
+  h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 8px 32px 20px;
+    line-height: 1.15;
+  }
+
+  .frame{
+    margin: 0 24px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #14100c;
+  }
+
+  .frame img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .caption{
+    padding: 22px 32px 30px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .caption strong{
+    color: var(--ink);
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <p class="eyebrow">Mini Challenge · PromptWars Virtual</p>
+    <h1>Which State Am I?</h1>
+    <div class="frame">
+      <img src="state.png" alt="A culturally rich scene representing my home state" />
+    </div>
+    <p class="caption">
+      Every detail in this image — the food, the craft, the light — comes from
+      one home state. <strong>Can you guess which one?</strong>
+    </p>
+  </div>
+
+</body>
+</html>
